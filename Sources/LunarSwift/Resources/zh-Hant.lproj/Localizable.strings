@@ -22,7 +22,7 @@
 " 阴贵神方位[\(dayPositionYinGui)](\(dayPositionYinGuiDesc))" = " 陰貴神方位[\(dayPositionYinGui)](\(dayPositionYinGuiDesc))";
 "525心理健康节" = "525心理健康節";
 "\(description) \(yearInGanZhi)(\(yearShengXiao))年\(monthInGanZhi)(\(monthShengXiao))月\(dayInGanZhi)(\(dayShengXiao))日\(timeInGanZhi)(\(timeShengXiao))时" = "\(description) \(yearInGanZhi)(\(yearShengXiao))年\(monthInGanZhi)(\(monthShengXiao))月\(dayInGanZhi)(\(dayShengXiao))日\(timeInGanZhi)(\(timeShengXiao))時";
-"\(gan)命互禄" = "\(gan)命互祿"
+"\(gan)命互禄" = "\(gan)命互祿";
 "\(number)\(color)\(wuXing) \(position)(\(positionDesc)) \(nameInBeiDou) 玄空[\(nameInXuanKong) \(luckInXuanKong)] 奇门[\(nameInQiMen) \(luckInQiMen)" = "\(number)\(color)\(wuXing) \(position)(\(positionDesc)) \(nameInBeiDou) 玄空[\(nameInXuanKong) \(luckInXuanKong)] 奇門[\(nameInQiMen) \(luckInQiMen)";
 "\(yearInChinese)年\(monthInChinese)月\(dayInChinese)" = "\(yearInChinese)年\(monthInChinese)月\(dayInChinese)";
 "〇" = "〇";
