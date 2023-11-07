@@ -207,7 +207,7 @@ public class Foto: NSObject {
 
     public override var description: String {
         get {
-            "\(yearInChinese)年\(monthInChinese)月\(dayInChinese)"
+            NSLocalizedString("\(yearInChinese)年\(monthInChinese)月\(dayInChinese)", bundle: Bundle.module, comment: "")
         }
     }
 

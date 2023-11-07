@@ -821,7 +821,7 @@ public class LunarUtil {
             index = right.range(of: "\(day)=")
         }
         if l.isEmpty {
-            l.append("无")
+            l.append(NSLocalizedString("无", comment: ""))
         }
         return l
     }
@@ -859,7 +859,7 @@ public class LunarUtil {
             index = right.range(of: "\(day)=")
         }
         if l.isEmpty {
-            l.append("无")
+            l.append(NSLocalizedString("无", comment: ""))
         }
         return l
     }
@@ -886,7 +886,7 @@ public class LunarUtil {
             }
         }
         if l.isEmpty {
-            l.append("无")
+            l.append(NSLocalizedString("无", comment: ""))
         }
         return l
     }
@@ -912,7 +912,7 @@ public class LunarUtil {
             }
         }
         if l.isEmpty {
-            l.append("无")
+            l.append(NSLocalizedString("无", comment: ""))
         }
         return l
     }
@@ -937,7 +937,7 @@ public class LunarUtil {
             }
         }
         if l.isEmpty {
-            l.append("无")
+            l.append(NSLocalizedString("无", comment: ""))
         }
         return l
     }
@@ -963,7 +963,7 @@ public class LunarUtil {
             }
         }
         if l.isEmpty {
-            l.append("无")
+            l.append(NSLocalizedString("无", comment: ""))
         }
         return l
     }

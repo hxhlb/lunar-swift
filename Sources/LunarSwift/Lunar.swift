@@ -995,9 +995,9 @@ public class Lunar: NSObject {
     public var dayLu: String {
         let gan = LunarUtil.LU[dayGan]!
         let zhi = LunarUtil.LU[dayZhi]
-        var lu = "\(gan)命互禄"
+        var lu = NSLocalizedString("\(gan)命互禄", bundle: Bundle.module, comment: "")
         if nil != zhi {
-            lu += " \(zhi!)命进禄"
+            lu += NSLocalizedString(" \(zhi!)命进禄", bundle: Bundle.module, comment: "")
         }
         return lu
     }
@@ -1009,7 +1009,7 @@ public class Lunar: NSObject {
             l.append(f!)
         }
         if abs(_month) == 12 && _day >= 29 && _year != next(days: 1).year {
-            l.append("除夕")
+            l.append(NSLocalizedString("除夕", bundle: Bundle.module, comment: ""))
         }
         return l
     }
@@ -1025,7 +1025,7 @@ public class Lunar: NSObject {
         let solarYmd = _solar.ymd
         var jq = _jieQi["清明"]!
         if solarYmd == jq.next(days: -1).ymd {
-            l.append("寒食节")
+            l.append(NSLocalizedString("寒食节", bundle: Bundle.module, comment: ""))
         }
 
         jq = _jieQi["立春"]!
@@ -1034,7 +1034,7 @@ public class Lunar: NSObject {
             offset += 10
         }
         if solarYmd == jq.next(days: offset + 40).ymd {
-            l.append("春社")
+            l.append(NSLocalizedString("春社", bundle: Bundle.module, comment: ""))
         }
 
         jq = _jieQi["立秋"]!
@@ -1043,7 +1043,7 @@ public class Lunar: NSObject {
             offset += 10
         }
         if solarYmd == jq.next(days: offset + 40).ymd {
-            l.append("秋社")
+            l.append(NSLocalizedString("秋社", bundle: Bundle.module, comment: ""))
         }
         return l
     }
@@ -1053,9 +1053,9 @@ public class Lunar: NSObject {
     }
 
     public var fullString: String {
-        var s = "\(description) \(yearInGanZhi)(\(yearShengXiao))年\(monthInGanZhi)(\(monthShengXiao))月\(dayInGanZhi)(\(dayShengXiao))日\(timeInGanZhi)(\(timeShengXiao))时"
-        s += "纳音[\(yearNaYin) \(monthNaYin) \(dayNaYin) \(timeNaYin)] "
-        s += "星期\(weekInChinese)"
+        var s = NSLocalizedString("\(description) \(yearInGanZhi)(\(yearShengXiao))年\(monthInGanZhi)(\(monthShengXiao))月\(dayInGanZhi)(\(dayShengXiao))日\(timeInGanZhi)(\(timeShengXiao))时", bundle: Bundle.module, comment: "")
+        s += NSLocalizedString(" 纳音[\(yearNaYin) \(monthNaYin) \(dayNaYin) \(timeNaYin)] ", bundle: Bundle.module, comment: "")
+        s += NSLocalizedString("星期\(weekInChinese)", bundle: Bundle.module, comment: "")
         for i in festivals {
             s += " (\(i))"
         }
@@ -1065,13 +1065,13 @@ public class Lunar: NSObject {
         if !jieQi.isEmpty {
             s += " [\(jieQi)]"
         }
-        s += " \(gong)方\(shou) 星宿[\(xiu)\(zheng)\(animal)](\(xiuLuck)) 彭祖百忌[\(pengZuGan) \(pengZuZhi)]"
-        s += " 喜神方位[\(dayPositionXi)](\(dayPositionXiDesc))"
-        s += " 阳贵神方位[\(dayPositionYangGui)](\(dayPositionYangGuiDesc))"
-        s += " 阴贵神方位[\(dayPositionYinGui)](\(dayPositionYinGuiDesc))"
-        s += " 福神方位[\(dayPositionFu)](\(dayPositionFuDesc))"
-        s += " 财神方位[\(dayPositionCai)](\(dayPositionCaiDesc))"
-        s += " 冲[\(dayChongDesc)] 煞[\(daySha)]"
+        s += NSLocalizedString(" \(gong)方\(shou) 星宿[\(xiu)\(zheng)\(animal)](\(xiuLuck)) 彭祖百忌[\(pengZuGan) \(pengZuZhi)]", bundle: Bundle.module, comment: "")
+        s += NSLocalizedString(" 喜神方位[\(dayPositionXi)](\(dayPositionXiDesc))", bundle: Bundle.module, comment: "")
+        s += NSLocalizedString(" 阳贵神方位[\(dayPositionYangGui)](\(dayPositionYangGuiDesc))", bundle: Bundle.module, comment: "")
+        s += NSLocalizedString(" 阴贵神方位[\(dayPositionYinGui)](\(dayPositionYinGuiDesc))", bundle: Bundle.module, comment: "")
+        s += NSLocalizedString(" 福神方位[\(dayPositionFu)](\(dayPositionFuDesc))", bundle: Bundle.module, comment: "")
+        s += NSLocalizedString(" 财神方位[\(dayPositionCai)](\(dayPositionCaiDesc))", bundle: Bundle.module, comment: "")
+        s += NSLocalizedString(" 冲[\(dayChongDesc)] 煞[\(daySha)]", bundle: Bundle.module, comment: "")
         return s
     }
 

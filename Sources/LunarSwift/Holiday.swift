@@ -54,7 +54,7 @@ public class Holiday: NSObject {
 
     public override var description: String {
         get {
-            "\(_day) \(_name)\(_work ? "调休" : "") \(_target)"
+            "\(_day) \(_name)\(_work ? NSLocalizedString("调休", bundle: Bundle.module, comment: "") : "") \(_target)"
         }
     }
 

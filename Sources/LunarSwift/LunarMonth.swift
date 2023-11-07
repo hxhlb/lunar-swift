@@ -58,7 +58,7 @@ public class LunarMonth: NSObject {
     override public var description: String {
         var r = ""
         if leap {
-            r = "闰"
+            r = NSLocalizedString("闰", bundle: .module, comment: "")
         }
         let m = abs(_month)
         return "\(_year)年\(r)\(LunarUtil.MONTH[m])月(\(_dayCount))天"
