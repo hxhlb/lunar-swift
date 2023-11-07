@@ -1,7 +1,10 @@
 /*
-    Localizable.strings
-    Created by 花心胡萝卜 on 11/6/23.
- */
+  Localizable.strings
+  
+
+  Created by 花心胡萝卜 on 11/6/23.
+  
+*/
 
 " \(baMenInQiMen)门] " = " \(baMenInQiMen)門] ";
 " \(gong)方\(shou) 星宿[\(xiu)\(zheng)\(animal)](\(xiuLuck)) 彭祖百忌[\(pengZuGan) \(pengZuZhi)]" = " \(gong)方\(shou) 星宿[\(xiu)\(zheng)\(animal)](\(xiuLuck)) 彭祖百忌[\(pengZuGan) \(pengZuZhi)]";
