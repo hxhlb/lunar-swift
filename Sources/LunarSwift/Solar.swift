@@ -535,16 +535,16 @@ public class Solar: NSObject {
         get {
             var s  = "\(ymdhms)"
             if leapYear {
-                s += NSLocalizedString(" 闰年", comment: "");
+                s += NSLocalizedString(" 闰年", bundle: Bundle.module, comment: "");
             }
-            s += NSLocalizedString(" 星期\(weekInChinese)", comment: "");
+            s += NSLocalizedString(" 星期\(weekInChinese)", bundle: Bundle.module, comment: "");
             for i in festivals {
                 s += " (\(i))"
             }
             for i in otherFestivals {
                 s += " (\(i))"
             }
-            s += NSLocalizedString(" \(xingZuo)座", comment: "");
+            s += NSLocalizedString(" \(xingZuo)座", bundle: Bundle.module, comment: "");
             return s
         }
     }

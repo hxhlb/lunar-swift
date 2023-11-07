@@ -80,9 +80,9 @@ public class Tao: NSObject {
             }
             let jq = _lunar.jieQi
             if "冬至" == jq {
-                l.append(TaoFestival(name: NSLocalizedString("元始天尊圣诞", comment: "")))
+                l.append(TaoFestival(name: NSLocalizedString("元始天尊圣诞", bundle: Bundle.module, comment: "")))
             } else if "夏至" == jq {
-                l.append(TaoFestival(name: NSLocalizedString("灵宝天尊圣诞", comment: "")))
+                l.append(TaoFestival(name: NSLocalizedString("灵宝天尊圣诞", bundle: Bundle.module, comment: "")))
             }
             var name = TaoUtil.BA_JIE[jq]
             if nil != name {

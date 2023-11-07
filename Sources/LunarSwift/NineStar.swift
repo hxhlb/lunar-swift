@@ -107,11 +107,11 @@ public class NineStar: NSObject {
     }
 
     public var fullString: String {
-        var s = NSLocalizedString("\(number)\(color)\(wuXing) \(position)(\(positionDesc)) \(nameInBeiDou) 玄空[\(nameInXuanKong) \(luckInXuanKong)] 奇门[\(nameInQiMen) \(luckInQiMen)", comment: "")
+        var s = NSLocalizedString("\(number)\(color)\(wuXing) \(position)(\(positionDesc)) \(nameInBeiDou) 玄空[\(nameInXuanKong) \(luckInXuanKong)] 奇门[\(nameInQiMen) \(luckInQiMen)", bundle: Bundle.module, comment: "")
         if !baMenInQiMen.isEmpty {
-            s += NSLocalizedString(" \(baMenInQiMen)门] ", comment: "")
+            s += NSLocalizedString(" \(baMenInQiMen)门] ", bundle: Bundle.module, comment: "")
         }
-        s += NSLocalizedString(" \(yinYangInQiMen) 太乙[\(nameInTaiYi) \(typeInTaiYi)]", comment: "")
+        s += NSLocalizedString(" \(yinYangInQiMen) 太乙[\(nameInTaiYi) \(typeInTaiYi)]", bundle: Bundle.module, comment: "")
         return s
     }
 }
